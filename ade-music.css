@@ -1,0 +1,195 @@
+body{
+    text-align: center;
+    color: #000000;
+    background: #ffffff;
+}
+.main{
+    width: 700px;
+    margin: 0 calc(50% - 350px) 0 calc(50% - 350px);
+}
+/*h1{}*/
+.description{
+    text-align: left;
+    background: #1c83e11a;
+    border: 1px solid #1c83e11a;
+    border-radius: 5px;
+    padding: 3px;
+}
+.description p{
+    margin: 10px;
+    color: #1e6777;
+}
+a{
+    color: #3256b9;
+    text-decoration: none;
+}
+a:visited{
+    color: #6132b9;
+}
+details{
+    margin:10px;
+}
+summary{
+    cursor: pointer; 
+}
+#music_list ul li{
+    display: block;
+    background-color: #fafafa;
+    list-style: none;
+    border: solid 1px #1e6777;
+    border-radius: 3px;
+    padding: 0;
+    margin: 10px;
+}
+#music_list a{
+    display: block;
+    border-radius: 3px;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+#music_list a:hover{
+    background-color: #f0f0f0;
+}
+.music_list_item{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.music_list_item img{
+    width: 20%;
+    display: inline-block;
+}
+.music_list_txt{
+    display: inline-block;
+}
+.music_list_item p{
+    color: #000000;
+}
+.music_list_title{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.inputbox{
+    margin:20px 0 0 0;
+    padding:0;
+}
+#form{
+    display: inline-block;
+    margin:5px 0 5px 0;
+    padding:15px;
+    width: calc(95% - 60px);
+    border-radius: 5px;
+    border: 0;
+    background: #f0f2f6;
+    color: #31333f;
+}
+#form:hover{
+    background: #dee0e6;
+}
+#form:focus{
+    background: #dee0e6;
+    outline: 2px solid #4977f6;
+}
+::placeholder{
+    color: #8c8c8f;
+}
+#button{
+    display: inline-block;
+    background: #3c96ca;
+    color: #fafafa;
+    padding:15px;
+    margin: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+#button:hover{
+    background: #55a8d8;
+}
+#button:focus{
+    background: #2a7aa8;
+}
+.videobox{
+    margin: 10px 0 10px 0;
+}
+noscript p{
+    font-size: 200%;
+}
+.video{
+    margin: 10px 0 10px 0;
+}
+
+@media screen and (max-width: 750px){
+    .main{
+        width: calc(100% - 6px);
+        margin: 0 3px 0 3px;
+    }
+    #form{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #button{
+        width: 100%;
+        box-sizing: border-box;
+        margin: 5px 0 5px 0;
+        padding: 10px;
+    }
+}
+
+@media(prefers-color-scheme: dark){
+    body{
+        background-color: #0e1117;
+        color: #fafafa;
+    }
+    .description{
+        background-color: #0c2216;
+        border: solid 1px #113f27;
+    }
+    .description p{
+        color: #34c385;
+    }
+    a{
+        color: #65a1f4;
+    }
+    a:visited{
+        color: #657af4;
+    }
+    #music_list ul li{
+        background-color: #1d1d1d;
+        border: solid 1px #666666;
+    }
+    #music_list ul li a:hover{
+        background-color: #333333;
+    }
+    #music_list ul li p{
+        color: #fafafa;
+    }
+    #form{
+        background: #262730;
+        color: #fafafa;
+    }
+    #form:hover{
+        background: #32343f;
+    }
+    #form:focus{
+        background: #32343f;
+        outline: 2px solid #4977f6;
+    }
+    ::placeholder{
+        color: #a5a6a9;
+    }
+    #button{
+        background: #247345;
+        color: #fafafa;
+    }
+    #button:hover{
+        background: #348355;
+    }
+    #button:focus{
+        background: #146335;
+    }
+}
